@@ -1,0 +1,19 @@
+<form (ngSubmit)="createHospital()" [formGroup]="registrarHospitalGroup">
+    <div class="client_section layout_padding">
+        <div class="container">
+            <h1 class="client_taital">Registrar hospital</h1>
+            <div class="col card card_contact_box">
+                <div class="card-body input-forms">
+                    <input type="text" class="form-control" placeholder="Nombre" formControlName="nombre" required>
+                </div>
+            </div>
+            <div class="col card_buttons_content">
+                <div class="text-center">
+                    <button class="button btn btn-primary" mat-flat-button color="primary" type="submit">Aceptar</button>
+                    <button class="btn btn-secondary" mat-flat-button color="secondary"
+                        routerLink="/hospital/gestion">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
